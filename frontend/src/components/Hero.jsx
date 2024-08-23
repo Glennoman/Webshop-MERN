@@ -1,0 +1,59 @@
+import React from "react";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
+const Hero = () => {
+  return (
+    <section
+      className="max-padd-container bg-hero bg-cover bg-top bg-no-repeat opacity-85 h-[1080px] w-full"
+      id="home"
+    >
+      <div>
+        <div className="relative top-24 xs:top-72">
+          <h4 className="uppercase medium-18 tracking-wider">
+            Fashion Essentials
+          </h4>
+          <h1 className="h1 capitalize max-w-[40rem]">
+            Upgrade Your Fashion{" "}
+            <span className="text-secondary">with Every Click.</span>Shop Today!
+          </h1>
+          <p className="text-gray-10 my-5 max-w-[35rem]">
+            Dummy text that I will fill later in this project for an ecommerce
+            website. <br />
+            Dummy text that I will fill later in this project for an ecommerce
+            website. <br /> Dummy text that I will fill later in this project
+            for an ecommerce website fully MERN stack
+          </p>
+          <div className="flex items-center gap-x-4">
+            <Link
+              to={""}
+              className="inline-flex items-center justify-center gap-4 p-3 bg-white rounded-xl"
+            >
+              <div className="regular-14 leading-tight pl-4">
+                <h5 className="uppercase font-bold">New Arrivals</h5>
+                <p className="text-gray-90 mt-1">10% Off</p>
+              </div>
+              <div className="bg-primary h-10 w-10 p-1 rounded-full flexCenter">
+                <FaArrowRight />
+              </div>
+            </Link>
+            <Link
+              to={""}
+              className="inline-flex items-center justify-center gap-4 p-3 bg-tertiary text-white rounded-xl"
+            >
+              <div className="regular-14 leading-tight pl-4">
+                <h5 className="uppercase font-bold">Hot Deals</h5>
+                <p>50% Off</p>
+              </div>
+              <div className="bg-primary h-10 w-10 p-1 rounded-full flexCenter text-tertiary">
+                <FaArrowRight />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
